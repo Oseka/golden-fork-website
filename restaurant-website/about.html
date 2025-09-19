@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | The Golden Fork</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+    <a href="index.html">
+      <img src="images/golden-fork-logo.png" alt="Golden Fork Logo">
+    </a>
+  </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero / Banner -->
+  <section class="hero about-hero">
+    <div class="hero-text">
+      <h1>About Us</h1>
+      <p>Discover our story, our passion, and what makes us special.</p>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="story-section">
+    <div class="story-container">
+      <div class="story-text">
+        <h2>Our Story</h2>
+        <p>
+          Founded in 2005, The Golden Fork has been a staple of fine dining and 
+          unforgettable experiences. What began as a small neighborhood kitchen quickly 
+          grew into a place where families, friends, and food lovers come together to share 
+          laughter, stories, and delicious meals.
+        </p>
+        <p>
+          Our philosophy is simple: use the freshest ingredients, craft meals with passion, 
+          and serve every guest like family.
+        </p>
+      </div>
+      <div class="story-image">
+        <img src="https://picsum.photos/500/400?food" alt="Restaurant interior">
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="values-section">
+    <h2>What We Stand For</h2>
+    <div class="values-container">
+      <div class="value-card">
+        <h3>Fresh Ingredients</h3>
+        <p>We source the highest quality, locally-grown ingredients for every dish.</p>
+      </div>
+      <div class="value-card">
+        <h3>Exceptional Service</h3>
+        <p>Our team goes the extra mile to ensure you feel welcomed and cared for.</p>
+      </div>
+      <div class="value-card">
+        <h3>Memorable Moments</h3>
+        <p>From casual lunches to special celebrations, we create experiences you’ll cherish.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Highlight -->
+  <section class="team-section">
+    <div class="team-container">
+      <img src="images/chef_musepCfBGeOtjfrq1.jpg" alt="Head Chef">
+      <div class="team-text">
+        <h2>Meet Our Head Chef</h2>
+        <p>
+          Chef Lola brings over 20 years of culinary experience to our kitchen. Her 
+          innovative approach blends traditional flavors with modern techniques, 
+          delivering dishes that are both comforting and exciting.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 The Golden Fork. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- JS for mobile nav -->
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

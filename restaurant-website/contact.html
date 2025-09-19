@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | The Golden Fork</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+       <div class="logo">
+    <a href="index.html">
+      <img src="images/golden-fork-logo.png" alt="Golden Fork Logo">
+    </a>
+  </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <!-- Hero / Banner -->
+  <section class="hero contact-hero">
+    <div class="hero-text">
+      <h1>Contact Us</h1>
+      <p>Get in touch or drop by — we’d love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-form">
+        <h2>Enquire Today</h2>
+        <form>
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" required>
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Contact Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="enquiry">Your Message / Enquiry</label>
+            <textarea id="enquiry" name="enquiry" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Submit Enquiry</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Our Location</h2>
+        <p>22 Golden Fork, City Name, State/Province</p>
+        <p>Phone: +234 800 123 4567</p>
+        <p>Email: GoldenFork@restaurant.com</p>
+        <h3>Opening Hours</h3>
+        <p>Mon – Fri: 11:00 AM – 10:00 PM</p>
+        <p>Sat – Sun: 10:00 AM – 11:00 PM</p>
+        <!-- Optional map placeholder -->
+        <div class="map-placeholder">
+          <!-- Could embed Google Maps later -->
+          <p>Map placeholder</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 The Golden Fork. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <!-- JS for mobile menu toggling -->
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
